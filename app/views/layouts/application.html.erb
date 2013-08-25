@@ -1,14 +1,80 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Natures Charm
+Description: A two-column, fixed-width design.
+Version    : 1.0
+Released   : 20080125
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Share</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Nature's Charm by Free CSS Templates</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+ <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+ <div id="body">
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+	
+	</div>
+	<div id="menu">
+		<ul>
+			<li class="active"><%=link_to "Home" , root_path %></li>
+			<li><%=link_to "Dash Board" , root_path %></li>
+			<li><%=link_to "Calender" , root_path %></li>
+			<li><%=link_to "Contact" , root_path %></li>
+		
+		</ul>
+	</div>
+</div>
+<!-- end header -->
 
-<%= yield %>
 
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+			<%= yield %>
+		</div>
+		
+	
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		<ul>
+			<li>
+				<h2>Categories</h2>
+				<ul>
+					<li><a href="#">Aliquam libero</a></li>
+					<li><a href="#">Consectetuer adipiscing elit</a></li>
+					<li><a href="#">metus aliquam pellentesque</a></li>
+					<li><a href="#">Suspendisse iaculis mauris</a></li>
+					<li><a href="#">Urnanet non molestie semper</a></li>
+					<li><a href="#">Proin gravida orci porttitor</a></li>
+				</ul>
+			</li>
+		
+		</ul>
+	</div>
+	<!-- end sidebar -->
+
+<div style="clear: both; height: 30px">&nbsp;</div>
+<!-- end page -->
+</div>
+<div id="footer">
+	<p>&copy;2007 All Rights Reserved. &nbsp;&bull;&nbsp; Designed by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a></p>
+</div>
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div>
 </body>
 </html>
