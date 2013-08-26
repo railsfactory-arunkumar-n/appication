@@ -30,6 +30,9 @@ gem 'bootstrap-datepicker-rails', :require => 'bootstrap-datepicker-rails',
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
+ gem 'devise'
+ 
+ 
 # Use unicorn as the app server
 # gem 'unicorn'
 
